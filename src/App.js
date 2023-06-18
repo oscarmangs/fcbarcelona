@@ -12,6 +12,7 @@ class App extends React.Component {
     lineup: {},
   }
   componentDidMount(){
+    //Sync with firebase
     this.ref = base.syncState(`lineup`, {
       context: this,
       state: "lineup",
